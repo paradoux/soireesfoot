@@ -175,12 +175,14 @@ button:focus {outline:0;}
   top: 55%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 98.5%;
   font-size: 22px;
   text-align: center;
   font-family: 'Poiret One', cursive;
-  color: black;  
+  color: black;
+  padding-left: 4px;
+  padding-right: 6px;  
 }
 
 .img-team{
