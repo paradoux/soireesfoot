@@ -5,8 +5,8 @@ import App from './App';
 import Client from 'shopify-buy';
 
 const client = Client.buildClient({
-    storefrontAccessToken: 'tobesetup',
-    domain: 'soireesfoot.myshopify.com'
+    storefrontAccessToken: process.env.STORE_TOKEN,
+    domain: process.env.DOMAIN
 });
 
 
