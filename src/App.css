@@ -181,6 +181,7 @@ button:focus {outline:0;}
   text-align: center;
   font-family: 'Poiret One', cursive;
   color: black; 
+  padding-right: 5px;
 }
 
 .img-team{
