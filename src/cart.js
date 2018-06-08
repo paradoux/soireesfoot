@@ -16,7 +16,6 @@ class Cart extends Component {
         let line_items = this.props.checkout.lineItems.map((line_item) => {
             return (
                 <LineItem
-                    updateQuantityInCart={this.props.updateQuantityInCart}
                     removeLineItemInCart={this.props.removeLineItemInCart}
                     key={line_item.id.toString()}
                     line_item={line_item}
@@ -27,7 +26,7 @@ class Cart extends Component {
         return (
             <div className={`Cart ${this.props.isCartOpen ? 'Cart--open' : ''}`}>
                 <header className="Cart__header">
-                    <h2>Your cart</h2>
+                    <h2>Vos Soirées</h2>
                     <button
                         onClick={this.props.handleCartClose}
                         className="Cart__close">
@@ -39,18 +38,18 @@ class Cart extends Component {
                 </ul>
                 <footer className="Cart__footer">
                     <div className="Cart-info clearfix">
-                        <div className="Cart-info__total Cart-info__small">Subtotal</div>
+                        <div className="Cart-info__total Cart-info__small">Sous-Total</div>
                         <div className="Cart-info__pricing">
-                            <span className="pricing">€ {this.props.checkout.subtotalPrice}</span>
+                            <span className="pricing">{this.props.checkout.subtotalPrice} €</span>
                         </div>
                     </div>
                     <div className="Cart-info clearfix">
                         <div className="Cart-info__total Cart-info__small">Total</div>
                         <div className="Cart-info__pricing">
-                            <span className="pricing">€ {this.props.checkout.totalPrice}</span>
+                            <span className="pricing">{this.props.checkout.totalPrice} €</span>
                         </div>
                     </div>
-                    <button className="Cart__checkout button" onClick={this.openCheckout}>Checkout</button>
+                    <button className="Cart__checkout button" onClick={this.openCheckout}>Validez votre soirée !</button>
                 </footer>
             </div>
         )

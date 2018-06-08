@@ -6,6 +6,9 @@
   text-align: center;
 }
 
+button:focus {outline:0;}
+
+
 /* Landing Banner */
 .App__view-cart-wrapper {
   position: absolute;
@@ -28,21 +31,21 @@
   left: 2%;
   font-family: 'Bungee Shade', cursive;
   color: white;
-  font-size: 200%; 
+  font-size: 2,1vw; 
 }
 
 
 .header-concept{
   font-family: 'Bungee Shade', cursive;
-  font-size: 136%; 
+  font-size: 1.7vw; 
   position: absolute;
   top:5%;
-  right: 23%;
+  right: 25%;
   color: white;
 }
 
 .header-concept:hover{
-  font-size: 150%; 
+  font-size:  2vw; 
   color: white;
 }
 
@@ -50,15 +53,29 @@
   position: absolute;
   top:5%;
   right: 10%;
-  font-size: 136%; 
+  font-size: 1.7vw; 
   font-family: 'Bungee Shade', cursive;
   color: white;
 }
 
 .header-matchs:hover{
-  font-size: 150%;
+  font-size: 2vw;
   color: white;
- 
+}
+
+@media only screen and (max-width: 600px) {
+  .landing-title{
+    position: absolute;
+    top: 5%;
+    font-size: 7vw;
+  }
+  .header-matchs, .header-concept  {
+      display: none;
+  }
+  .header-concept{
+    position: absolute;
+    right: 40%;
+  }
 }
 
 .landing-banner{
@@ -70,31 +87,27 @@
   background-position: 50% 1%;
 }
 
-
-/* 
-                  https://res.cloudinary.com/do6dm58us/image/upload/f_auto,w_200/soirees_foot_potes.jpg 200w,
-                  https://res.cloudinary.com/do6dm58us/image/upload/f_auto,w_514/soirees_foot_potes.jpg 514w,
-                  https://res.cloudinary.com/do6dm58us/image/upload/f_auto,w_735/soirees_foot_potes.jpg 735w,
-                  https://res.cloudinary.com/do6dm58us/image/upload/f_auto,w_918/soirees_foot_potes.jpg 918w,
-                  https://res.cloudinary.com/do6dm58us/image/upload/f_auto,w_1114/soirees_foot_potes.jpg 1114w,
-                  https://res.cloudinary.com/do6dm58us/image/upload/f_auto,w_1274/soirees_foot_potes.jpg 1274w,
-                  https://res.cloudinary.com/do6dm58us/image/upload/f_auto,w_1280/soirees_foot_potes.jpg 1280w,
- */
-
  /* Concept */
 
  #concept{
   font-size: 136%; 
   font-family: 'Bungee Shade', cursive;
   color: black;
-   height: 60vh;
    width: 100%;
+   margin-top: 4%;
+   margin-bottom: 4%; 
  }
 
  .concept-title{
    width: 100%;
    text-align: center;
+   margin-bottom: 2%;
  }
+
+/*  .explication{
+   margin-left: 73px;
+   margin-right: 73px;
+ } */
 
  .icons div{
   text-align: center;
@@ -102,19 +115,24 @@
 
  .icons{
    width: 100%;
-   display: flex;
-   justify-content: space-evenly;
  }
 
  .icons p{
   font-family: 'Poiret One', cursive;
   font-weight: 600;
+  margin-left: 40px;
+  margin-right: 40px;
  }
 
 /* Cards Container */
 
 
 /* Cards */
+
+#matchs{
+  width: 100%;
+}
+
 .matchs-title{
   width: 100%;
   text-align: center;
@@ -158,11 +176,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100%;
+  width: 98.5%;
   font-size: 22px;
-}
-
-#teams{
   text-align: center;
   font-family: 'Poiret One', cursive;
   color: black;  
@@ -244,6 +259,8 @@ button{
   }
   
   .Cart__header {
+    font-family: 'Bungee Shade', cursive;
+    color: black;
     padding: 20px;
     border-bottom: 1px solid #e5e5e5;
     flex: 0 0 auto;
@@ -257,12 +274,17 @@ button{
   }
   
   .Cart__footer {
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+    color: black;
     padding: 20px;
     border-top: 1px solid #e5e5e5;
     flex: 0 0 auto;
   }
   
   .Cart__checkout {
+    border: solid 1px grey;
+    font-weight: 600;
     margin-top: 20px;
     display: block;
     width: 100%;
@@ -304,13 +326,13 @@ button{
   }
   
   .Line-item__img {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     border-radius: 3px;
-    background-size: contain;
+    background-image: url('http://res.cloudinary.com/do6dm58us/image/upload/c_scale,w_159/v1528490944/soireesfoot_livraison_projecteur.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: #e5e5e5;
     position: absolute;
   }
   
@@ -320,77 +342,31 @@ button{
   }
   
   .Line-item__content-row {
-    display: inline-block;
-    width: 100%;
     margin-bottom: 5px;
     position: relative;
   }
   
   .Line-item__variant-title {
-    float: right;
-    font-weight: bold;
     font-size: 11px;
     line-height: 17px;
     color: #767676;
   }
   
   .Line-item__title {
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
     color: #4E5665;
     font-size: 15px;
-    font-weight: 400;
   }
   
   .Line-item__price {
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
     line-height: 23px;
     float: right;
     font-weight: bold;
     font-size: 15px;
     margin-right: 40px;
-  }
-  
-  .Line-item__quantity-container {
-    border: 1px solid #767676;
-    float: left;
-    border-radius: 3px;
-  }
-  
-  .Line-item__quantity-update {
-    color: #767676;
-    display: block;
-    float: left;
-    height: 21px;
-    line-height: 16px;
-    font-family: monospace;
-    width: 25px;
-    padding: 0;
-    border: none;
-    background: transparent;
-    box-shadow: none;
-    cursor: pointer;
-    font-size: 18px;
-    text-align: center;
-  }
-  
-  .Line-item__quantity-update-form {
-    display: inline;
-  }
-  
-  .Line-item__quantity {
-    color: black;
-    width: 38px;
-    height: 21px;
-    line-height: 23px;
-    font-size: 15px;
-    border: none;
-    text-align: center;
-    -moz-appearance: textfield;
-    background: transparent;
-    border-left: 1px solid #767676;
-    border-right: 1px solid #767676;
-    display: block;
-    float: left;
-    padding: 0;
-    border-radius: 0;
   }
   
   .Line-item__remove {
