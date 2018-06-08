@@ -180,9 +180,7 @@ button:focus {outline:0;}
   font-size: 22px;
   text-align: center;
   font-family: 'Poiret One', cursive;
-  color: black;
-  padding-left: 4px;
-  padding-right: 6px;  
+  color: black; 
 }
 
 .img-team{
