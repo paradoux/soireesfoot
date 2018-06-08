@@ -1,0 +1,410 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Poiret+One');
+
+/* Global App */
+.App {
+  text-align: center;
+}
+
+/* Landing Banner */
+.App__view-cart-wrapper {
+  position: absolute;
+  top:3%;
+  right: 2%;
+}
+
+.App__view-cart {
+  font-size: 25px;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+
+
+.landing-title{
+  border-radius: 5px;
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  font-family: 'Bungee Shade', cursive;
+  color: white;
+  font-size: 200%; 
+}
+
+
+.header-concept{
+  font-family: 'Bungee Shade', cursive;
+  font-size: 136%; 
+  position: absolute;
+  top:5%;
+  right: 23%;
+  color: white;
+}
+
+.header-concept:hover{
+  font-size: 150%; 
+  color: white;
+}
+
+.header-matchs{
+  position: absolute;
+  top:5%;
+  right: 10%;
+  font-size: 136%; 
+  font-family: 'Bungee Shade', cursive;
+  color: white;
+}
+
+.header-matchs:hover{
+  font-size: 150%;
+  color: white;
+ 
+}
+
+.landing-banner{
+  height: 60vh;
+  width: 100%;
+  background-image: url('https://res.cloudinary.com/do6dm58us/image/upload/f_auto,w_1280/soirees_foot_potes.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: 50% 1%;
+}
+
+
+/* 
+                  https://res.cloudinary.com/do6dm58us/image/upload/f_auto,w_200/soirees_foot_potes.jpg 200w,
+                  https://res.cloudinary.com/do6dm58us/image/upload/f_auto,w_514/soirees_foot_potes.jpg 514w,
+                  https://res.cloudinary.com/do6dm58us/image/upload/f_auto,w_735/soirees_foot_potes.jpg 735w,
+                  https://res.cloudinary.com/do6dm58us/image/upload/f_auto,w_918/soirees_foot_potes.jpg 918w,
+                  https://res.cloudinary.com/do6dm58us/image/upload/f_auto,w_1114/soirees_foot_potes.jpg 1114w,
+                  https://res.cloudinary.com/do6dm58us/image/upload/f_auto,w_1274/soirees_foot_potes.jpg 1274w,
+                  https://res.cloudinary.com/do6dm58us/image/upload/f_auto,w_1280/soirees_foot_potes.jpg 1280w,
+ */
+
+ /* Concept */
+
+ #concept{
+  font-size: 136%; 
+  font-family: 'Bungee Shade', cursive;
+  color: black;
+   height: 60vh;
+   width: 100%;
+ }
+
+ .concept-title{
+   width: 100%;
+   text-align: center;
+ }
+
+ .icons div{
+  text-align: center;
+ }
+
+ .icons{
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+ }
+
+ .icons p{
+  font-family: 'Poiret One', cursive;
+  font-weight: 600;
+ }
+
+/* Cards Container */
+
+
+/* Cards */
+.matchs-title{
+  width: 100%;
+  text-align: center;
+  font-family: 'Bungee Shade', cursive;
+  color: black;
+}
+
+.card {
+  height:200px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  color: white;
+  font-family: 'Poiret One', cursive; 
+  content: 'Réservez votre télé pour ce match !';
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+.img-top{
+  position: absolute; 
+  top: 9px;
+  right: 8%;
+  width: 80%;
+  height: 40%;
+  background-image: url('https://res.cloudinary.com/do6dm58us/image/upload/v1528388404/soirees_foot_coupe_du_monde_russie.jpg');
+  background-size: 100% ; 
+  background-repeat: no-repeat;
+  background-position: 30% 55%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+}
+
+#teams{
+  position: absolute;
+  top: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 22px;
+}
+
+#teams{
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  color: black;  
+}
+
+.img-team{
+  height: 40px;
+}
+.date{
+  width: 57%;
+  text-align: center;
+  position: absolute;
+  bottom: -27px;
+  left: 23%;
+  height: 44px;
+}
+
+.date p {
+  margin: 0px;
+  font-family: 'Poiret One', cursive;
+}
+
+.button-bottom{
+  font-family: 'Poiret One', cursive;
+  font-size:15px; 
+  color: white;
+  display:inline-block;
+  padding:0.3em 1.2em;
+  background-color:#006633;
+  text-align:center;
+  position: absolute;
+  bottom: 5px;
+  height: 15%;
+  width: 54%;
+  margin-left: 23%;
+}
+
+button{
+  text-decoration: none;
+  background:none;
+  border:none;
+}
+
+.hidden{
+  visibility: hidden;
+}
+/* Cart */
+
+
+
+  .Cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #e5e5e5;
+    transform: translateX(100%);
+    transition: transform 0.15s ease-in-out;
+  }
+  
+  .Cart--open {
+    transform: translateX(0);
+  }
+  
+  .Cart__close {
+    position: absolute;
+    right: 9px;
+    top: 8px;
+    font-size: 35px;
+    color: #999;
+    border: none;
+    background: transparent;
+    transition: transform 100ms ease;
+    cursor: pointer;
+  }
+  
+  .Cart__header {
+    padding: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    flex: 0 0 auto;
+    display: inline-block;
+  }
+  
+  .Cart__line-items {
+    flex: 1 0 auto;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .Cart__footer {
+    padding: 20px;
+    border-top: 1px solid #e5e5e5;
+    flex: 0 0 auto;
+  }
+  
+  .Cart__checkout {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+  }
+  
+  .Cart-info {
+    padding: 15px 20px 10px;
+  }
+  
+  .Cart-info__total {
+    float: left;
+    text-transform: uppercase;
+  }
+  
+  .Cart-info__small {
+    font-size: 11px;
+  }
+  
+  .Cart-info__pricing {
+    float: right;
+  }
+  
+  .pricing {
+    margin-left: 5px;
+    font-size: 16px;
+    color: black;
+  }
+  
+  /* LINE ITEMS
+   * ============================== */
+  .Line-item {
+    margin-bottom: 20px;
+    overflow: hidden;
+    backface-visibility: visible;
+    min-height: 65px;
+    position: relative;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .Line-item__img {
+    width: 65px;
+    height: 65px;
+    border-radius: 3px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #e5e5e5;
+    position: absolute;
+  }
+  
+  .Line-item__content {
+    width: 100%;
+    padding-left: 75px;
+  }
+  
+  .Line-item__content-row {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  
+  .Line-item__variant-title {
+    float: right;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 17px;
+    color: #767676;
+  }
+  
+  .Line-item__title {
+    color: #4E5665;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .Line-item__price {
+    line-height: 23px;
+    float: right;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 40px;
+  }
+  
+  .Line-item__quantity-container {
+    border: 1px solid #767676;
+    float: left;
+    border-radius: 3px;
+  }
+  
+  .Line-item__quantity-update {
+    color: #767676;
+    display: block;
+    float: left;
+    height: 21px;
+    line-height: 16px;
+    font-family: monospace;
+    width: 25px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .Line-item__quantity-update-form {
+    display: inline;
+  }
+  
+  .Line-item__quantity {
+    color: black;
+    width: 38px;
+    height: 21px;
+    line-height: 23px;
+    font-size: 15px;
+    border: none;
+    text-align: center;
+    -moz-appearance: textfield;
+    background: transparent;
+    border-left: 1px solid #767676;
+    border-right: 1px solid #767676;
+    display: block;
+    float: left;
+    padding: 0;
+    border-radius: 0;
+  }
+  
+  .Line-item__remove {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    background: 0;
+    font-size: 20px;
+    top: -4px;
+    opacity: 0.5;
+  }
+  
+  .Line-item__remove:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
